@@ -118,7 +118,7 @@ int main(int argc, char **argv) {
     event_loop loop(arg_out, out_path, arg_err, err_path, is_interactive, commands);
     std::vector<ssh_node *> nodes;
     for (std::string &host : hosts) {
-        loop.create_node(host, "parkjongheum", "whdgma8642"); //, "parkjongheum", "whdgma8642");
+        loop.create_node(host, "ubuntu", "ubuntu");
     }
     loop.start_event_loop();
     loop.wait_event_loop();
